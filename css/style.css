@@ -16,13 +16,33 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+   font-family:  Montserrat, 'Helvetica Neue', sans-serif;
+}
 header,
 footer {
     min-height: 70px;
 }
 
+#facebook{
+    color: var(--color-icon-blue)
+}
 
+#twitter{
+    color: var(--color-icon-blue);
+}
+
+#instagram{
+    color: var(--color-icon-red);
+}
+
+#pinterest{
+    color: var(--color-icon-red);
+}
+
+#youtube{
+    color: var(--color-icon-red);
+}
 /*header*/
 header{
     background-color: var(--color-white);
@@ -142,13 +162,17 @@ footer{
 footer ul{
     list-style: none;
     font-size: 18px;
-    padding-bottom: 50px;
+    padding: 20px 10px;
     color: var(--color-white);
     
 }
 
 footer ul li{
-    padding: 20px;
+    padding: 10px;
+}
+
+footer ul li a{
+    color: var(--color-white);
 }
 
 .f-center{
@@ -177,20 +201,23 @@ footer ul li{
 }
 
 
-/*debug*/
+/*debug
 .debug{
     border: 1px solid red;
-}
+}*/
 
 /*space*/
 .p-20{
     padding: 20px;
 }
 
+.ptb-20{
+    padding-top: 20px 0px;
+}
 
 @media screen and (min-width: 768px){
 
-
+/*header*/
 
     .j-start{
         justify-content: flex-start;
@@ -204,7 +231,7 @@ footer ul li{
         padding: 8px 50px;
         border-radius: 15px;
     }
-
+/*main*/
     .info{
         display: flex;
         flex-wrap: wrap;
@@ -222,12 +249,15 @@ footer ul li{
         display: block
     }
 
-
-
     .t-image img{
         float: left;
-        width: 40%;
+        width: 50%;
+        padding: 10px 5px;
+    }
 
+    .text{
+        font-size: 1.5em;
+        line-height: 1.6;
     }
 
 }
@@ -235,15 +265,59 @@ footer ul li{
 
 
 @media screen and (min-width: 992px){
+    /*header*/
+    
+    
+    /*main*/
     .image{
         width: 70%;
     }
 
     .content{
         width: 30%;
+        
+    }
+
+    .info{
+        flex-direction: column;
     }
 
     .flex-lg{
         display: flex;
     }
+
+    
+.icons ul li span{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.icons ul li{
+    padding: 5px 10px;
+}
+
+.info li{
+    width: 100%;
+}
+/*footer*/
+
+#footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.wrap{
+    flex-wrap: nowrap;
+    
+}
+
+.f-center{
+    text-align: start;
+}
+
+
 }
