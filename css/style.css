@@ -21,6 +21,7 @@ body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
 
+
 header,
 footer {
     min-height: 70px;
@@ -283,6 +284,12 @@ footer ul li a {
 
 @media screen and (min-width: 992px) {
     /*header*/
+
+    .container-small{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
 
     h1{
        font-size: 4em;
